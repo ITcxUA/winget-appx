@@ -1,0 +1,55 @@
+{
+	//
+	//
+	//	"$schema":	"https://aka.ms/winget-settings.schema.json",
+	//	"$id":		"https://aka.ms/winget-settings.schema.json",
+	//	"$schema":	"https://json-schema.org/draft/2019-09/schema#",
+	//	"title":	"Microsoft's Windows Package Manager Settings Profile Schema",
+	
+	"source": {
+		"autoUpdateIntervalInMinutes": 3
+	},
+	"experimentalFeatures": {
+		"configuration": true,
+		"dependencies": true,
+		"directMSI": true,
+		"windowsFeature": true,
+		"download": true,
+		"experimentalCmd": true,
+		"experimentalArg": true,
+		"experimentalMSStore": true,
+		"packagedAPI": true,
+	},
+	"visual": {
+		"progressBar": "rainbow"
+	},
+	"installBehavior": {
+		"preferences": {
+			//"scope": "user",
+			"scope": "machine",
+			"locale": [ "en-US", "fr-FR" ]
+		}
+	},
+	"telemetry": {
+		"disable": true
+	},
+	"network": {
+		"downloader": "do",
+		"doProgressTimeoutInSeconds": 60
+	}
+}
+
+////////////////////    EXAMPLE    \\\\\\\\\\\\\\\\\\\\
+
+
+
+/**
+,
+//	"network": {
+//	   "downloader": "do",
+//	   "doProgressTimeoutInSeconds": 60
+//	}
+//	"network": {
+//		"downloader": "do"
+//	}
+*/
